@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'watch_shop.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "shop",
-        "USER": "jenny",
-        "PASSWORD": "jenny",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "NAME": "",
+        "USER": "",
+        "PASSWORD": "",
+        "HOST": "",
+        "PORT": "",
 
     }
 }
