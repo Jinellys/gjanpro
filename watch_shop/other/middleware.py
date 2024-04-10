@@ -15,3 +15,16 @@ class RequestLoggingMiddleware:
         response = self.get_response(request)
 
         return response
+
+
+class LoggingMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        response = self.get_response(request)
+
+        # после выполнения запроса
+        logging.info(f"Response sent: {response.status_code}")
+
+        return response

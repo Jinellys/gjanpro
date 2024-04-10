@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'other.middleware.RequestLoggingMiddleware',
+    'other.middleware.LoggingMiddleware',
 ]
 
 ROOT_URLCONF = 'watch_shop.urls'
