@@ -50,7 +50,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'other.middleware.RequestLoggingMiddleware',
     'other.middleware.LoggingMiddleware',
 ]
 
@@ -81,11 +80,11 @@ WSGI_APPLICATION = 'watch_shop.wsgi.application'
 DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "",
-        "USER": "",
-        "PASSWORD": "",
-        "HOST": "",
-        "PORT": "",
+        "NAME": "shop",
+        "USER": "jenny",
+        "PASSWORD": "jenny",
+        "HOST": "localhost",
+        "PORT": "5432",
 
     }
 }
